@@ -1,0 +1,22 @@
+{
+  "app": {
+    "listen": "127.0.0.1:1102",
+    "url": "http://0.0.0.0:1102"
+  },
+  "log": {
+    "level": "debug",
+    "accessLog": "./logs/access.log",
+    "runtimeLog": "./logs/runtime.log",
+    "errorLog": "./logs/error.log"
+  },
+  "persistence": {
+    "postgresql": {
+      "url": "postgres://postgres:UHscZqRjV7tA9HQu@47.100.111.232:5432/iidev?sslmode=disable",
+      "showLog": true
+    },
+    "redis": {
+      "host": ":6379",
+      "db": 15
+    }
+  }
+}
