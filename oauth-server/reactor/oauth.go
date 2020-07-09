@@ -38,7 +38,7 @@ func (s *ClientStore) GetByID(id string) (oauth2.ClientInfo, error) {
 
 	// 校验通过后，使用item中的数据，来生成oauth结构体
 	//return s.toClientInfo(item.Data)
-	data := ""
+	data := `{"ID":"c83b3a16","Secret":"3a19c419","Domain":"http://localhost:19090/","UserID":null}`
 	return s.toClientInfo(data)
 }
 
